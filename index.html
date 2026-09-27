@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PhishGuard - Phishing Awareness Simulator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Header
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+            🛡️ PhishGuard
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#learn">Learn</a>
+            <a href="#techniques">Techniques</a>
+            <a href="#simulation">Simulation</a>
+            <a href="#tips">Safety Tips</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#progress">Progress</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             Hero
+        ========================== -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <span class="badge">
+                    CYBERSECURITY AWARENESS
+                </span>
+
+                <h1>
+                    Can You Spot a Phishing Attack?
+                </h1>
+
+                <p>
+                    Learn how to identify suspicious emails, links,
+                    and social engineering techniques before they
+                    become a security threat.
+                </p>
+
+                <button onclick="startSimulator()">
+                    Start Simulation →
+                </button>
+
+            </div>
+
+
+            <div class="hero-icon">
+                🎣
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             What is Phishing
+        ========================== -->
+
+        <section id="learn" class="section">
+
+            <h2>
+                What is Phishing?
+            </h2>
+
+            <p>
+                Phishing is a social engineering technique where
+                attackers attempt to trick people into revealing
+                sensitive information or performing unsafe actions.
+            </p>
+
+
+            <div class="warning-grid">
+
+                <div class="warning-card">
+
+                    <div>🔗</div>
+
+                    <h3>
+                        Suspicious Links
+                    </h3>
+
+                    <p>
+                        Attackers may use deceptive links that lead
+                        users to fraudulent websites.
+                    </p>
+
+                </div>
+
+
+                <div class="warning-card">
+
+                    <div>🚨</div>
+
+                    <h3>
+                        Urgent Messages
+                    </h3>
+
+                    <p>
+                        Attackers often create urgency or fear to
+                        pressure users into acting quickly.
+                    </p>
+
+                </div>
+
+
+                <div class="warning-card">
+
+                    <div>👤</div>
+
+                    <h3>
+                        Impersonation
+                    </h3>
+
+                    <p>
+                        Attackers may impersonate trusted people,
+                        companies, or services.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Phishing Techniques
+        ========================== -->
+
+        <section id="techniques"
+                 class="section techniques-section">
+
+            <span class="badge">
+                KNOW THE THREATS
+            </span>
+
+            <h2>
+                Common Phishing Techniques
+            </h2>
+
+            <p>
+                Understanding common phishing techniques can help
+                you recognize suspicious messages and avoid unsafe
+                actions.
+            </p>
+
+
+            <div class="techniques-grid">
+
+                <div class="technique-card">
+
+                    <div class="technique-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Email Phishing
+                    </h3>
+
+                    <p>
+                        Fraudulent emails are designed to look like
+                        legitimate communications from organizations,
+                        services, or individuals.
+                    </p>
+
+                    <span class="technique-tag">
+                        EMAIL
+                    </span>
+
+                </div>
+
+
+                <div class="technique-card">
+
+                    <div class="technique-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Spear Phishing
+                    </h3>
+
+                    <p>
+                        A targeted phishing attempt designed for a
+                        specific person or organization using
+                        personalized information.
+                    </p>
+
+                    <span class="technique-tag">
+                        TARGETED
+                    </span>
+
+                </div>
+
+
+                <div class="technique-card">
+
+                    <div class="technique-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Smishing
+                    </h3>
+
+                    <p>
+                        Phishing attempts delivered through SMS or
+                        other messaging services.
+                    </p>
+
+                    <span class="technique-tag">
+                        SMS
+                    </span>
+
+                </div>
+
+
+                <div class="technique-card">
+
+                    <div class="technique-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Vishing
+                    </h3>
+
+                    <p>
+                        Social engineering attacks carried out
+                        through voice calls or phone conversations.
+                    </p>
+
+                    <span class="technique-tag">
+                        VOICE
+                    </span>
+
+                </div>
+
+
+                <div class="technique-card">
+
+                    <div class="technique-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Clone Phishing
+                    </h3>
+
+                    <p>
+                        A legitimate message may be copied or
+                        imitated and modified to contain a malicious
+                        or deceptive link.
+                    </p>
+
+                    <span class="technique-tag">
+                        CLONED
+                    </span>
+
+                </div>
+
+
+                <div class="technique-card">
+
+                    <div class="technique-number">
+                        06
+                    </div>
+
+                    <h3>
+                        Social Engineering
+                    </h3>
+
+                    <p>
+                        Attackers manipulate trust, urgency, fear,
+                        or curiosity to influence a person's actions.
+                    </p>
+
+                    <span class="technique-tag">
+                        HUMAN FACTOR
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Phishing Email Simulation
+        ========================== -->
+
+        <section id="simulation"
+                 class="section email-section">
+
+            <span class="badge">
+                INTERACTIVE SIMULATION
+            </span>
+
+            <h2>
+                Inspect a Suspicious Email
+            </h2>
+
+            <p>
+                Examine the email and select the warning signs
+                you believe indicate phishing.
+            </p>
+
+
+            <div class="email-card">
+
+                <div class="email-header">
+
+                    <div class="sender-avatar">
+                        IT
+                    </div>
+
+
+                    <div class="sender-info">
+
+                        <strong>
+                            IT Support
+                        </strong>
+
+                        <span>
+                            security-alert@example-security.com
+                        </span>
+
+                    </div>
+
+
+                    <span class="email-time">
+                        10:42 AM
+                    </span>
+
+                </div>
+
+
+                <div class="email-subject">
+
+                    ⚠️ URGENT: Your account requires verification
+
+                </div>
+
+
+                <div class="email-body">
+
+                    <p>
+                        Hello User,
+                    </p>
+
+                    <p>
+                        We detected unusual activity on your account.
+                        Your account will be suspended within
+                        <strong>24 hours</strong> unless you verify
+                        your identity.
+                    </p>
+
+                    <p>
+                        Click the button below to confirm your account:
+                    </p>
+
+
+                    <div class="fake-link">
+
+                        https://account-security-verification.example
+
+                    </div>
+
+
+                    <div class="red-flag-selection">
+
+                        <h3>
+                            🚩 Which warning signs do you notice?
+                        </h3>
+
+                        <p>
+                            Select all the signs you think are suspicious.
+                        </p>
+
+
+                        <label class="flag-option">
+
+                            <input
+                                type="checkbox"
+                                value="urgency"
+                            >
+
+                            Urgent account suspension threat
+
+                        </label>
+
+
+                        <label class="flag-option">
+
+                            <input
+                                type="checkbox"
+                                value="sender"
+                            >
+
+                            Suspicious sender address
+
+                        </label>
+
+
+                        <label class="flag-option">
+
+                            <input
+                                type="checkbox"
+                                value="verification"
+                            >
+
+                            Unexpected request for verification
+
+                        </label>
+
+
+                        <label class="flag-option">
+
+                            <input
+                                type="checkbox"
+                                value="link"
+                            >
+
+                            Suspicious link
+
+                        </label>
+
+
+                        <label class="flag-option">
+
+                            <input
+                                type="checkbox"
+                                value="normal"
+                            >
+
+                            This looks completely normal
+
+                        </label>
+
+
+                        <button
+                            class="inspect-btn"
+                            onclick="analyzeRedFlags()">
+
+                            🔍 Analyze My Selection
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id="email-analysis"
+                 class="email-analysis">
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Safety Tips
+        ========================== -->
+
+        <section id="tips"
+                 class="section tips-section">
+
+            <span class="badge">
+                STAY SAFE
+            </span>
+
+            <h2>
+                How to Protect Yourself
+            </h2>
+
+            <p>
+                Follow these simple practices to reduce your risk
+                of falling victim to phishing attacks.
+            </p>
+
+
+            <div class="tips-grid">
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+                        🔗
+                    </div>
+
+                    <h3>
+                        Check Links
+                    </h3>
+
+                    <p>
+                        Hover over links and verify the destination
+                        before clicking.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+                        📧
+                    </div>
+
+                    <h3>
+                        Verify the Sender
+                    </h3>
+
+                    <p>
+                        Check the sender's address carefully,
+                        especially for unexpected messages.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+                        🔐
+                    </div>
+
+                    <h3>
+                        Protect Credentials
+                    </h3>
+
+                    <p>
+                        Never share passwords, verification codes,
+                        or sensitive information through suspicious
+                        messages.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+                        ⏸️
+                    </div>
+
+                    <h3>
+                        Stop and Think
+                    </h3>
+
+                    <p>
+                        Be cautious when a message creates urgency
+                        or pressure you to act immediately.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+                        🛡️
+                    </div>
+
+                    <h3>
+                        Use Security Tools
+                    </h3>
+
+                    <p>
+                        Keep your browser, operating system,
+                        and security software updated.
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <div class="tip-icon">
+                        🚨
+                    </div>
+
+                    <h3>
+                        Report Phishing
+                    </h3>
+
+                    <p>
+                        Report suspicious messages through your
+                        organization's approved security channel.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Quiz
+        ========================== -->
+
+        <section id="quiz"
+                 class="section simulator">
+
+            <h2>
+                Phishing Awareness Quiz
+            </h2>
+
+            <p id="question">
+                Click "Start Simulation" to begin.
+            </p>
+
+            <div id="options"></div>
+
+            <p id="result"></p>
+
+        </section>
+
+
+        <!-- =========================
+             Progress Dashboard
+        ========================== -->
+
+        <section id="progress"
+                 class="section progress-section">
+
+            <span class="badge">
+                YOUR SECURITY JOURNEY
+            </span>
+
+            <h2>
+                Training Progress
+            </h2>
+
+            <p>
+                Complete the awareness activities to improve
+                your phishing detection skills.
+            </p>
+
+
+            <div class="progress-dashboard">
+
+
+                <div class="progress-card">
+
+                    <div class="progress-icon">
+                        🎯
+                    </div>
+
+                    <span>
+                        QUIZ SCORE
+                    </span>
+
+                    <strong id="dashboard-score">
+                        0%
+                    </strong>
+
+                    <small>
+                        Complete the quiz
+                    </small>
+
+                </div>
+
+
+                <div class="progress-card">
+
+                    <div class="progress-icon">
+                        🔍
+                    </div>
+
+                    <span>
+                        EMAIL ANALYSIS
+                    </span>
+
+                    <strong id="dashboard-analysis">
+                        Not Started
+                    </strong>
+
+                    <small>
+                        Analyze the simulated email
+                    </small>
+
+                </div>
+
+
+                <div class="progress-card">
+
+                    <div class="progress-icon">
+                        🛡️
+                    </div>
+
+                    <span>
+                        AWARENESS LEVEL
+                    </span>
+
+                    <strong id="dashboard-level">
+                        Beginner
+                    </strong>
+
+                    <small>
+                        Based on quiz performance
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="overall-progress">
+
+                <div class="progress-label">
+
+                    <span>
+                        Overall Training Progress
+                    </span>
+
+                    <strong id="progress-percent">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div id="progress-fill">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer>
+
+        <p>
+            PhishGuard — Educational Phishing Awareness Simulator
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
